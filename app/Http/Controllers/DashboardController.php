@@ -7,12 +7,8 @@ use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
-    /**
-     * Menampilkan halaman dashboard utama.
-     */
     public function index(): View
     {
-        // Kita bisa mengirim data ke view dari sini
         $stats = [
             ['label' => 'Total Pesanan', 'value' => '1,250'],
             ['label' => 'Paket Populer', 'value' => 'Petualangan Yogyakarta'],
